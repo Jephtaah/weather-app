@@ -1,16 +1,2 @@
 # Keep API keys out of version control
 config.js
-
-# Environment files
-.env
-.env.local
-
-# Logs
-*.log
-
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-build/

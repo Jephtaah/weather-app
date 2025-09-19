@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="weather-app">
-            <h1>Weather App</h1>
+      <div class="weather-app">
+        <h1>Weather App</h1>
 
-            <div class="search-section">
-                <input type="text" class="city-input js-city-input" placeholder="Enter city name..." maxlength="50">
-                <button class="search-btn js-search-btn">Search</button>
-            </div>
-
-            <div class="loading js-loading" style="display: none;">
-                <div class="spinner"></div>
-                <p>Loading weather data...</p>
-            </div>
-
-            <div class="weather-card js-weather-card" style="display: none;">
-                <div class="weather-header">
-                    <h2 class="city-name js-city-name"></h2>
-                    <div class="weather-icon">
-                        <img class="weather-icon-img js-weather-icon" src="" alt="Weather icon">
-                    </div>
-                </div>
-
-                <div class="weather-info">
-                    <div class="temperature">
-                        <span class="temperature-value js-temperature"></span>°C
-                    </div>
-                    <div class="description js-description"></div>
-                    <div class="details">
-                        <div class="detail-item">
-                            <span class="label">Feels like:</span>
-                            <span class="feels-like-value js-feels-like"></span>°C
-                        </div>
-                        <div class="detail-item">
-                            <span class="label">Humidity:</span>
-                            <span class="humidity-value js-humidity"></span>%
-                        </div>
-                        <div class="detail-item">
-                            <span class="label">Wind:</span>
-                            <span class="wind-speed-value js-wind-speed"></span> m/s
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="error-message js-error-message" style="display: none;">
-                <p class="error-text js-error-text"></p>
-                <button class="retry-btn js-retry-btn">Try Again</button>
-            </div>
+        <div class="search-section">
+          <input
+            type="text"
+            class="city-input js-city-input"
+            placeholder="Enter city name..."
+            maxlength="50"
+          />
+          <button class="search-btn js-search-btn">Search</button>
         </div>
+
+        <div class="loading js-loading" style="display: none">
+          <div class="spinner"></div>
+          <p>Loading weather data...</p>
+        </div>
+
+        <div class="weather-card js-weather-card" style="display: none">
+          <div class="weather-header">
+            <h2 class="city-name js-city-name"></h2>
+            <div class="weather-icon">
+              <img
+                class="weather-icon-img js-weather-icon"
+                src=""
+                alt="Weather icon"
+              />
+            </div>
+          </div>
+
+          <div class="weather-info">
+            <div class="temperature">
+              <span class="temperature-value js-temperature"></span>°C
+            </div>
+            <div class="description js-description"></div>
+            <div class="details">
+              <div class="detail-item">
+                <span class="label">Feels like:</span>
+                <span class="feels-like-value js-feels-like"></span>°C
+              </div>
+              <div class="detail-item">
+                <span class="label">Humidity:</span>
+                <span class="humidity-value js-humidity"></span>%
+              </div>
+              <div class="detail-item">
+                <span class="label">Wind:</span>
+                <span class="wind-speed-value js-wind-speed"></span> m/s
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="error-message js-error-message" style="display: none">
+          <p class="error-text js-error-text"></p>
+          <button class="retry-btn js-retry-btn">Try Again</button>
+        </div>
+      </div>
     </div>
 
     <script src="config.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
